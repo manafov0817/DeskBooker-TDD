@@ -1,11 +1,24 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.29509.3
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35312.102
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeskBooker.Core.Tests", "DeskBooker.Core.Tests\DeskBooker.Core.Tests.csproj", "{68E8C47A-B0D9-4E3F-BB38-9C3E2D555E33}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DeskBooker.Core.Tests", "DeskBooker.Core.Tests\DeskBooker.Core.Tests.csproj", "{68E8C47A-B0D9-4E3F-BB38-9C3E2D555E33}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeskBooker.Core", "DeskBooker.Core\DeskBooker.Core.csproj", "{5A6B296A-7130-4405-99D0-8E96B03CBCF9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DeskBooker.Core", "DeskBooker.Core\DeskBooker.Core.csproj", "{5A6B296A-7130-4405-99D0-8E96B03CBCF9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DeskBooker.DataAccess", "DeskBooker.DataAccess\DeskBooker.DataAccess.csproj", "{ED49716C-88BC-429B-9B02-A4A350DB916D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DeskBooker.DataAccess.Tests", "DeskBooker.DataAccess.Tests\DeskBooker.DataAccess.Tests.csproj", "{09429FEF-D46C-4D48-8D33-D4996861E408}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DeskBooker.Web", "DeskBooker.Web\DeskBooker.Web.csproj", "{85B5D559-6AB4-423B-89E5-DD9E18787FFC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{6F18B930-1DD3-45B3-B130-6F21E375BC2A}"
+	ProjectSection(SolutionItems) = preProject
+		DeskBooker.Web.Tests\DeskBooker.Web.Tests.csproj = DeskBooker.Web.Tests\DeskBooker.Web.Tests.csproj
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DeskBooker.Web.Tests", "DeskBooker.Web.Tests\DeskBooker.Web.Tests.csproj", "{4FD8C005-F953-4F19-92E4-BA6C6B7313CA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +34,22 @@ Global
 		{5A6B296A-7130-4405-99D0-8E96B03CBCF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5A6B296A-7130-4405-99D0-8E96B03CBCF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5A6B296A-7130-4405-99D0-8E96B03CBCF9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED49716C-88BC-429B-9B02-A4A350DB916D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED49716C-88BC-429B-9B02-A4A350DB916D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED49716C-88BC-429B-9B02-A4A350DB916D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED49716C-88BC-429B-9B02-A4A350DB916D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{09429FEF-D46C-4D48-8D33-D4996861E408}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09429FEF-D46C-4D48-8D33-D4996861E408}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09429FEF-D46C-4D48-8D33-D4996861E408}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09429FEF-D46C-4D48-8D33-D4996861E408}.Release|Any CPU.Build.0 = Release|Any CPU
+		{85B5D559-6AB4-423B-89E5-DD9E18787FFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{85B5D559-6AB4-423B-89E5-DD9E18787FFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{85B5D559-6AB4-423B-89E5-DD9E18787FFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{85B5D559-6AB4-423B-89E5-DD9E18787FFC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4FD8C005-F953-4F19-92E4-BA6C6B7313CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FD8C005-F953-4F19-92E4-BA6C6B7313CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FD8C005-F953-4F19-92E4-BA6C6B7313CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FD8C005-F953-4F19-92E4-BA6C6B7313CA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -4,8 +4,9 @@ using System.Collections.Generic;
 
 namespace DeskBooker.Core.Abstract
 {
-    public interface IDeskRepositiory
+    public interface IDeskRepository
     {
         IEnumerable<Desk> GetAvailableDesks(DateTime date);
+        IEnumerable<Desk> GetAll();
     }
 }

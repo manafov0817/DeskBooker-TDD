@@ -12,8 +12,8 @@ namespace DeskBooker.Core.Processor
     {
         private readonly DeskBookingRequest _request;
         private readonly List<Desk> _availableDesks;
-        private readonly Mock<IDeskBookingRepostiory> _deskBookingRepositoryMock;
-        private readonly Mock<IDeskRepositiory> _deskRepositoryMock;
+        private readonly Mock<IDeskBookingRepository> _deskBookingRepositoryMock;
+        private readonly Mock<IDeskRepository> _deskRepositoryMock;
         private readonly DeskBookingRequestProcessor _processor;
 
         public DeskBookingRequestProcessorTests()
@@ -28,9 +28,9 @@ namespace DeskBooker.Core.Processor
 
             _availableDesks = new List<Desk>() { new Desk() { Id = 3 } };
 
-            _deskBookingRepositoryMock = new Mock<IDeskBookingRepostiory>();
+            _deskBookingRepositoryMock = new Mock<IDeskBookingRepository>();
 
-            _deskRepositoryMock = new Mock<IDeskRepositiory>();
+            _deskRepositoryMock = new Mock<IDeskRepository>();
             _deskRepositoryMock.Setup(x => x.GetAvailableDesks(_request.Date)).Returns(_availableDesks);
 
             _processor = new DeskBookingRequestProcessor(_deskBookingRepositoryMock.Object, _deskRepositoryMock.Object);
